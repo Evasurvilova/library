@@ -1,0 +1,161 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+body { background: #f5f5f5; min-height: 100vh; }
+
+/* Страницы */
+.page { display: none; padding: 20px; max-width: 800px; margin: 0 auto; }
+.page.active { display: block; }
+
+/* Кнопки */
+.btn-primary {
+    background: #2b4eff;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    margin: 5px 0;
+}
+.btn-primary:hover { background: #1a3bdb; }
+.btn-primary.small { padding: 8px 20px; width: auto; }
+
+.btn-back {
+    background: #2b4eff;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 8px 30px;
+    font-size: 14px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Заголовки */
+.page-header {
+    background: #e0e0e0;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+/* Логотип */
+.header-logo { text-align: center; margin-bottom: 20px; }
+.header-logo img { width: 120px; }
+.header-logo h1 { font-size: 18px; margin-top: 5px; }
+
+/* Поиск */
+.search-bar {
+    background: #e0e0e0;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.search-bar input {
+    border: none;
+    background: transparent;
+    flex: 1;
+    outline: none;
+    font-size: 14px;
+}
+.search-bar span { font-size: 18px; }
+
+/* Книги */
+.book-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.book-grid img { width: 100%; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); cursor: pointer; }
+.book-card { text-align: center; cursor: pointer; }
+.book-title { font-size: 12px; margin-top: 5px; }
+
+/* Главная */
+.welcome-text { font-size: 22px; margin: 10px 0; }
+.action-buttons { display: flex; gap: 10px; margin: 15px 0; }
+.action-buttons .btn-primary { flex: 1; }
+.section-title { font-size: 16px; font-weight: bold; margin: 20px 0 10px; }
+
+/* Детали книги */
+.book-detail-container { display: flex; gap: 20px; margin-top: 30px; }
+.book-detail-container .cover { width: 200px; }
+.book-detail-container .info { flex: 1; }
+.book-detail-container .info h2 { margin-bottom: 10px; }
+.book-detail-container .info p { margin: 3px 0; font-size: 14px; }
+
+/* Мой формуляр */
+.menu-item {
+    background: #2b4eff;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 8px 0;
+    text-align: center;
+    cursor: pointer;
+}
+.menu-item:hover { background: #1a3bdb; }
+
+/* Админка */
+.admin-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+.admin-grid .btn-primary { height: 70px; font-size: 15px; border-radius: 20px; }
+
+/* Таблица читателей */
+.reader-table { width: 100%; border-collapse: collapse; background: white; margin: 15px 0; }
+.reader-table th { background: #2b4eff; color: white; padding: 10px; text-align: left; }
+.reader-table td { padding: 10px; border-bottom: 1px solid #ddd; }
+
+/* Формы входа и регистрации */
+.auth-form { max-width: 350px; margin: 0 auto; text-align: center; }
+.auth-form .logo { width: 120px; margin: 0 auto 20px; display: block; }
+.auth-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    background: #e0e0e0;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.auth-form .btn-primary { margin-top: 15px; }
+.auth-form .link {
+    color: #2b4eff;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+}
+.auth-form .link:hover { text-decoration: underline; }
+
+/* Мероприятия */
+.event-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.event-card img { width: 80px; border-radius: 5px; }
+.event-info { flex: 1; }
+
+/* Бронирование */
+.reservation-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.reservation-item { text-align: center; }
+.reservation-item img { width: 100%; border-radius: 5px; }
+
+/* Начальная страница выбора роли */
+.role-select { text-align: center; margin: 30px 0; }
+.role-select .btn-primary { max-width: 300px; margin: 10px auto; }
+.guest-link {
+    color: #666;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: underline;
+    margin-top: 15px;
+    display: block;
+}
